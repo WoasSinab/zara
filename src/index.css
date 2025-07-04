@@ -1,0 +1,32 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+
+@import "tailwindcss";
+
+
+body {
+  background-color: #FFFCEE;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@keyframes number-change {
+  0% {
+    opacity: 0;
+    transform: translateY(-10px) scale(0.8);
+  }
+  50% {
+    opacity: 1;
+    transform: translateY(0) scale(1.1); /* کمی بزرگتر شدن */
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+.animate-number-change {
+  animation: number-change 0.3s ease-out forwards; /* 0.3 ثانیه انیمیشن نرم */
+}
+
