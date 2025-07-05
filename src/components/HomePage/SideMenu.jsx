@@ -2,21 +2,16 @@ import React from 'react';
 
 function SideMenu({ isOpen, onClose }) {
   const menuItems = [
-    { name: 'Home', link: '/' },
-    { name: 'New Arrivals', link: '/new-arrivals' },
-    { name: 'Women', link: '/women' },
-    { name: 'Men', link: '/men' },
-    { name: 'Kids', link: '/kids' },
-    { name: 'Sale', link: '/sale' },
-    { name: 'My Account', link: '/account' },
-    { name: 'Shopping Bag', link: '/cart' },
-    { name: 'Store Locator', link: '/stores' },
-    { name: 'Contact Us', link: '/contact' },
+    { name: 'Home', link: '#/home' }, // لینک به صفحه اصلی با هش روتینگ
+    { name: 'Products', link: '#/products/page/1' }, // لینک به صفحه محصولات (صفحه 1) با هش روتینگ
+    { name: 'My Account', link: '#/account' }, // مثال: آیتم‌های عمومی
+    { name: 'Shopping Bag', link: '#/cart' },   // مثال: آیتم‌های عمومی
+    // آیتم‌های اضافی مانند New Arrivals, Women, Men, Kids, Sale, Store Locator, Contact Us حذف شدند
   ];
 
   return (
     <>
-      {/* Overlay - حالا با opacity و pointer-events برای انیمیشن نرم‌تر */}
+      {/* Overlay */}
       <div
         className={`fixed inset-0 bg-black transition-opacity duration-300 z-40
           ${isOpen ? 'opacity-50 pointer-events-auto' : 'opacity-0 pointer-events-none'}`}
@@ -49,11 +44,10 @@ function SideMenu({ isOpen, onClose }) {
           <ul className="list-none p-0 m-0">
             {menuItems.map((item, index) => (
               <li key={item.name}
-                // انیمیشن fade-in و slide-in کوچک با تأخیر
                 className={`transform transition-all duration-300 ease-out ${
                   isOpen ? 'opacity-100 translate-x-0' : 'opacity-0 -translate-x-4'
                 }`}
-                style={{ transitionDelay: isOpen ? `${index * 0.05}s` : '0s' }} // تأخیر در باز شدن
+                style={{ transitionDelay: isOpen ? `${index * 0.05}s` : '0s' }}
               >
                 <a
                   href={item.link}

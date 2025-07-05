@@ -13,7 +13,6 @@ function Home() {
   return(
     <div>
       <div className="min-h-screen flex flex-col ">
-        < Header />
         < Hero />
         < Category />
         < TopSeller />
