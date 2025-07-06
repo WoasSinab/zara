@@ -1,5 +1,6 @@
 import HeroProducts from "../components/ZaraProducts/HeroProducts"
 import ZaraProCards from "../components/ZaraProducts/ZaraProCards";
+import ZaraProSocial from "../components/ZaraProducts/ZaraProSocial";
 
 function ZaraProducts() {
 
@@ -86,6 +87,9 @@ function ZaraProducts() {
         ))}
       </div>
     </section>
+
+
+    < ZaraProSocial />
 
       </div>
     </div>
