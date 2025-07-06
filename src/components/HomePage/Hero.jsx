@@ -48,7 +48,7 @@ function Hero() {
             <h2 className="text-3xl leading-snug italic text-gray-900 mb-8" style={{ fontFamily: '"Playfair Display", serif' }}>
               Simplicity is the ultimate sophistication
             </h2>
-            <button className="flex items-center mx-auto text-[#CB6146] font-semibold text-base hover:text-orange-800 transition-colors duration-200">
+            <button className="flex items-center mx-auto text-[] font-semibold text-base hover:text-orange-800 transition-colors duration-200">
               Explore Collections
               <svg
                 xmlns="http://www.w3.org/2000/svg"
