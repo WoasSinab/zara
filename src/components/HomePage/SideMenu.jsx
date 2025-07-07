@@ -4,7 +4,7 @@ function SideMenu({ isOpen, onClose }) {
   const menuItems = [
     { name: 'Home', link: '/' }, // لینک به صفحه اصلی با هش روتینگ
     { name: 'Products', link: '#/zaraproducts' }, // لینک به صفحه محصولات (صفحه 1) با هش روتینگ
-    { name: 'My Account', link: '#/account' }, // مثال: آیتم‌های عمومی
+    { name: 'Login', link: '#/login' }, // مثال: آیتم‌های عمومی
     { name: 'Shopping Bag', link: '#/cart' },   // مثال: آیتم‌های عمومی
     // آیتم‌های اضافی مانند New Arrivals, Women, Men, Kids, Sale, Store Locator, Contact Us حذف شدند
   ];
