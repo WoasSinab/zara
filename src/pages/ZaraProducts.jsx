@@ -52,7 +52,7 @@ function ZaraProducts() {
   ];
 
   return (
-    <div className="mx-40 flex flex-col">
+    <div className="lg:mx-40 flex flex-col">
         <div className=' flex flex-row justify-between  my-12 mx-8'>
           <div>
             <svg xmlns='http://www.w3.org/2000/svg' width='32' height='32' viewBox='0 0 24 24'>
@@ -109,9 +109,7 @@ function ZaraProducts() {
 
         <ZaraProBanner />
 
-        <div className='px-6 flex justify-center py-12'>
-        <div className='w-full h-px bg-gray-200'></div>
-      </div>
+      
         < Footer />
     </div>
   );

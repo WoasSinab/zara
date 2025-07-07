@@ -2,7 +2,7 @@ function Footer() {
   return (
     <div className="mb-12">
       {/* بخش بالا */}
-      <div className="flex flex-col md:flex-row md:mx-40 mx-6 mb-12 gap-12 md:gap-0 justify-between font-medium">
+      <div className="flex flex-col md:flex-row md:mx-40 mx-6 my-12 gap-12 md:gap-0 justify-between font-medium">
         <FooterSection
           title="SOCIAL"
           items={[
