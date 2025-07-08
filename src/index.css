@@ -31,3 +31,6 @@ body {
   animation: number-change 0.3s ease-out forwards; /* 0.3 ثانیه انیمیشن نرم */
 }
 
+html {
+  scroll-behavior: smooth;
+}
