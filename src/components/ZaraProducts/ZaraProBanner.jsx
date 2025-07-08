@@ -11,8 +11,9 @@ function ZaraProBanner() {
       <div className="bg-[#431C13] text-gray-200 lg:w-1/2 lg:p-24 p-8 flex flex-col gap-8">
         <p className="text-md font-light">LIMITED OFFER</p>
         <h1 className="lg:text-5xl text-3xl leading-16">30% Off Only This Friday And Get Special Gift </h1>
-        
-        < PreShopDivider />
+        <a href="#/zaraproducts">
+          < PreShopDivider />
+        </a>
 
       </div>
     </div>

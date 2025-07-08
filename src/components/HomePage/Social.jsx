@@ -24,7 +24,7 @@ function Social() {
         </div>
         <div className='flex flex-col justify-between gap-4'>
           <img src='https://s6.uupload.ir/files/014_a2z9.png' alt='social 4' />
-          <div className='flex flex-row items-center text-[#CB6146] cursor-pointer'>
+          <a href="https://www.instagram.com/zara/" className='flex flex-row items-center text-[#CB6146] cursor-pointer'>
             <h1 className='font-normal text-base md:text-xl'>FOLLOW US ON INSTAGRAM</h1>
             <span className="ml-2">
               <svg xmlns='http://www.w3.org/2000/svg' width='20' height='20' viewBox='0 0 24 24'>
@@ -38,7 +38,7 @@ function Social() {
                 />
               </svg>
             </span>
-          </div>
+          </a>
         </div>
       </div>
 

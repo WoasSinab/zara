@@ -84,9 +84,9 @@ function WinterSec() {
           </div>
         </div>
 
-        <div>
+        <a href='#/zaraproducts'>
           < PreShopDivider />
-        </div>
+        </a>
       </div>
     </div>
   );
