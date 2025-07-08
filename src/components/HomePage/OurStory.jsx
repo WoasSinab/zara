@@ -33,7 +33,7 @@ function OurStory() {
           </p>
 
           <div className='flex flex-row items-center gap-2 text-[#CB6146] font-medium cursor-pointer'>
-            <h1 className="text-base md:text-lg">Full Story</h1>
+            <a href="https://en.wikipedia.org/wiki/Zara" className="text-base md:text-lg">Full Story</a>
             <span>
               <svg xmlns='http://www.w3.org/2000/svg' width='20' height='20' viewBox='0 0 24 24'>
                 <path
