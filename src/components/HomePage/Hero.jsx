@@ -44,11 +44,11 @@ function Hero() {
 
           {/* Main Content: Headline and Call to Action - Mobile Specific */}
           <div className="text-center max-w-xs px-2 mb-8">
-            <p className="text-orange-600 text-sm italic mb-4 font-semibold">#Fall</p>
+            <p className="text-[#CB6146] text-sm italic mb-4 font-semibold">#Fall</p>
             <h2 className="text-3xl leading-snug italic text-gray-900 mb-8" style={{ fontFamily: '"Playfair Display", serif' }}>
               Simplicity is the ultimate sophistication
             </h2>
-            <button className="flex items-center mx-auto text-[] font-semibold text-base hover:text-orange-800 transition-colors duration-200">
+            <a href='#/zaraproducts' className="flex items-center mx-auto text-[] font-semibold text-base hover:text-orange-800 transition-colors duration-200">
               Explore Collections
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -60,7 +60,7 @@ function Hero() {
               >
                 <path strokeLinecap="round" strokeLinejoin="round" d="M17.25 8.25L21 12m0 0l-3.75 3.75M21 12H3" />
               </svg>
-            </button>
+            </a>
           </div>
 
           {/* Bottom Image for Mobile */}
@@ -118,14 +118,14 @@ function Hero() {
           </div>
 
           {/* Main Content: Headline and Call to Action - Desktop Only */}
-          <div className="relative z-20 text-center max-w-2xl px-4">
-            <p className="text-orange-600 text-sm italic mb-24 font-semibold">#Fall</p>
+          <div className="relative z-20 text-center max-w-2xl px-4 flex flex-col justify-center">
+            <p className="text-[#CB6146] text-sm italic mb-24 font-semibold">#Fall</p>
 
             <h2 className="text-5xl md:text-6xl italic text-gray-900 leading-tight mb-32" style={{ fontFamily: '"Playfair Display", serif' }}>
               Simplicity is the ultimate sophistication
             </h2>
 
-            <button className="flex items-center mx-auto text-[#CB6146] font-semibold text-lg hover:text-orange-800 transition-colors duration-200">
+            <a href='#/zaraproducts' className="flex items-center mx-auto text-[#CB6146] font-semibold text-lg hover:text-orange-800 transition-colors duration-200">
               Explore Collections
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -137,11 +137,11 @@ function Hero() {
               >
                 <path strokeLinecap="round" strokeLinejoin="round" d="M17.25 8.25L21 12m0 0l-3.75 3.75M21 12H3" />
               </svg>
-            </button>
+            </a>
           </div>
 
           {/* Scroll Down Indicator - Desktop Only */}
-          <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 z-20">
+          <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 z-20" onClick={() => window.scrollTo(0, 900)}>
             <button className="relative flex items-center justify-start w-[180px] h-16 text-gray-600 hover:text-gray-900 transition-colors duration-200 focus:outline-none">
               <div className="flex items-center justify-center w-32 h-32 rounded-full border-2 border-gray-400 flex-shrink-0">
                 <svg
