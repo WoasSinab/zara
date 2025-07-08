@@ -1,9 +1,10 @@
 import React, { useState } from 'react';
-import SideMenu from '../HomePage/SideMenu';
+import SideMenu from './SideMenu';
+import SearchOverlay from './SearchOverlay'; // import کردن کامپوننت SearchOverlay
 
 function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
-  const [isSearchOpen, setIsSearchOpen] = useState(false); // وضعیت برای باز/بسته بودن نوار جستجو
+  const [isSearchOpen, setIsSearchOpen] = useState(false);
 
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
@@ -16,7 +17,7 @@ function Header() {
   };
 
   return (
-    <header className=" text-gray-800 w-full border-b border-gray-200 py-4 md:py-6 lg:py-8">
+    <header className="bg-[#FFFCEE] text-gray-800 w-full border-b border-gray-200 py-4 md:py-6 lg:py-8">
       <div className='container mx-auto flex items-center justify-between h-16 px-4 sm:px-6 lg:px-10'>
         {/* Burger Menu Button */}
         <button onClick={toggleMenu} className='w-6 sm:w-8 p-1 rounded-md hover:bg-gray-100 transition-colors duration-200'>
@@ -101,22 +102,10 @@ function Header() {
         </div>
       </div>
 
-      {/* Search Input Field - به صورت کشویی ظاهر می‌شود */}
-      <div
-        className={`w-full bg-gray-50 transition-all duration-300 ease-in-out overflow-hidden ${
-          isSearchOpen ? 'max-h-20 py-4 border-b border-gray-200' : 'max-h-0'
-        }`}
-      >
-        <div className="container mx-auto px-4 sm:px-6 lg:px-10">
-          <input
-            type="text"
-            placeholder="جستجو..."
-            className="w-full p-3 rounded-md border border-gray-300 focus:outline-none focus:ring-1 focus:ring-gray-400"
-          />
-        </div>
-      </div>
+      {/* SearchOverlay Component - حالا به جای نوار کشویی */}
+      <SearchOverlay isOpen={isSearchOpen} onClose={toggleSearch} />
 
-      {/* کامپوننت SideMenu */}
+      {/* SideMenu Component */}
       <SideMenu isOpen={isMenuOpen} onClose={toggleMenu} />
     </header>
   );
