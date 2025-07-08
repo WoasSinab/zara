@@ -2,7 +2,7 @@ import React from 'react';
 
 function SideMenu({ isOpen, onClose }) {
   const menuItems = [
-    { name: 'Home', link: '#' }, // لینک به صفحه اصلی با هش روتینگ
+    { name: 'Home', link: 'https://woassinab.github.io/zara/' }, // لینک به صفحه اصلی با هش روتینگ
     { name: 'Products', link: '#/zaraproducts' }, // لینک به صفحه محصولات (صفحه 1) با هش روتینگ
     { name: 'Login', link: '#/login' }, // مثال: آیتم‌های عمومی
     { name: 'Shopping Bag', link: '#/cart' },   // مثال: آیتم‌های عمومی
